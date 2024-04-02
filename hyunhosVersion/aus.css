@@ -1,0 +1,70 @@
+html{
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #c9ae91;
+    
+}
+header{
+    background-color: #9A816B;
+    color: white;
+    padding: 3rem 2rem;
+}
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.imagen-container {
+    position: relative;
+}
+
+.imagen-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imagen-container:hover .imagen-hover {
+    opacity: 1;
+}
+
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 10px; /* Ajusta el valor según sea necesario para redondear las esquinas */
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section article h2, section article p {
+    margin: 1rem; /* Ajusta el margen según sea necesario */
+}
+
+
+footer{
+    background-color: #9A816B;
+    padding: 3rem;
+    color: white;
+}
